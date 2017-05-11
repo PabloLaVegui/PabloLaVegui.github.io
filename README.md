@@ -1,23 +1,27 @@
-# jekyll-uno
+Cows and Code
+==================
+Pablo LaVegui Blog
+------------------
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+From Jekyll-uno theme: https://github.com/joshgerdes/jekyll-uno
 
-> :warning:
-  This theme requires ruby and rubygems installed
+Build container
+---------------
 
-### Features
+```
+$ docker build -t jekyll-uno .
+```
 
-* Clean layout
-* Resposive layout
-* Pagination
-* Syntax highlighting
-* Social links
-* Tags listing page
-* Categories listing page
-* Google Analytics integration
-* Disqus integration
+Run in local with Docker
+------------------------
 
----
+```
+$ docker run -v "$PWD":/srv/jekyll -p "4000:4000" jekyll-uno jekyll serve --watch --drafts
+```
+or
+```
+$ docker-compose -f docker-compose.yml up jekyllblog
+```
 
 ### Install and Test
 
@@ -28,17 +32,6 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 4. Start Jekyll server: `bundle exec jekyll serve --watch`
 
 Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
-
----
-
-### Demo and Download
-
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
-
-![jekyll-uno - free Jekyll theme](/screenshot.png)
-
----
 
 ### Copyright and license
 
