@@ -3,7 +3,7 @@ title: COWS AND CODE
 description: 'Pablo LaVegui site'
 url: 'http://cowsandcode.com/'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-99074215-1'
 # disqus_shortname: 'your-disqus-name'
 
 author:
