@@ -20,8 +20,16 @@ layout: default
         <!-- Twitter -->
         <li class="navigation__item">
           <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter_username }}&related={{ site.author.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+
             <i class="icon icon-social-twitter"></i>
-            <span class="label">Twitter</span>
+          </a>
+        </li>
+
+        <!-- Facebook -->
+        <!-- TODO: hacer que funcione -->
+        <li class="navigation__item">
+          <a href="https://www.facebook.com/dialog/share?app_id=468858176787586&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}" title="Share on Facebook">
+            <i class="icon icon-social-facebook"></i>
           </a>
         </li>
 
