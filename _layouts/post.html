@@ -12,6 +12,24 @@ layout: default
   <section class="post">
     {{ content }}
   </section>
+
+  <section class="post-social-buttons">
+    <nav class="cover-navigation navigation--social">
+      <ul class="navigation">
+
+        <!-- Twitter -->
+        <li class="navigation__item">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter_username }}&related={{ site.author.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+            <i class="icon icon-social-twitter"></i>
+            <span class="label">Twitter</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </section>
+
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+
 </article>
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
