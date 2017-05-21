@@ -1,26 +1,26 @@
 {% if page.title %}
-  {% assign title = page.title %}
+  {% assign meta_title = page.title %}
 {% else %}
-  {% assign title = site.title %}
+  {% assign meta_title = site.title %}
 {% endif %}
 {% if page.url != "/" %}
-  {% assign content = page.content | markdownify | strip_html | strip_newlines | truncate: 300 %}
-  {% assign url = site.url | append: page.url %}
+  {% assign meta_content = page.content | markdownify | strip_html | strip_newlines | truncate: 300 %}
+  {% assign meta_url = site.url | append: page.url %}
 {% else %}
-  {% assign content = site.description %}
-  {% assign url = site.url %}
+  {% assign meta_content = site.description %}
+  {% assign meta_url = site.url %}
 {% endif %}
 {% if page.image-share %}
-  {% assign image = page.image-share %}
+  {% assign meta_image = page.image-share %}
 {% else %}
-  {% assign image = "images/profile.jpg" %}
+  {% assign meta_image = "images/profile.jpg" %}
 {% endif %}
 <meta property="og:site_name" content="Cows And Code" />
-<meta property="og:url" content="{{ url }}" />
+<meta property="og:url" content="{{ meta_url }}" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="{{ title }}" />
-<meta property="og:description" content="{{ content }}" />
-<meta property="og:image" content="{{ site.url }}{{ image }}" />
+<meta property="og:title" content="{{ meta_title }}" />
+<meta property="og:description" content="{{ meta_content }}" />
+<meta property="og:image" content="{{ site.url }}{{ meta_image }}" />
 <meta property="og:image:width" content="640" />
 <meta property="og:image:height" content="480" />
 <meta property="og:locale" content="es_ES" />
@@ -28,6 +28,6 @@
 <meta name="twitter:site" content="@PabloLaVegui" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@PabloLaVegui" />
-<meta name="twitter:title" content="{{ title }}" />
-<meta name="twitter:description" content="{{ content }}" />
-<meta name="twitter:image" content="{{ site.url }}{{ image }}?w=240" />
+<meta name="twitter:title" content="{{ meta_title }}" />
+<meta name="twitter:description" content="{{ meta_content }}" />
+<meta name="twitter:image" content="{{ site.url }}{{ meta_image }}?w=240" />
