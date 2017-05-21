@@ -5,8 +5,10 @@
 {% endif %}
 {% if page.url != "/" %}
   {% assign content = page.content | markdownify | strip_html | strip_newlines | truncate: 300 %}
+  {% assign url = site.url | append: page.url %}
 {% else %}
   {% assign content = site.description %}
+  {% assign url = site.url %}
 {% endif %}
 {% if page.image-share %}
   {% assign image = page.image-share %}
@@ -14,7 +16,7 @@
   {% assign image = "images/profile.jpg" %}
 {% endif %}
 <meta property="og:site_name" content="Cows And Code" />
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ url }}" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:description" content="{{ content }}" />
