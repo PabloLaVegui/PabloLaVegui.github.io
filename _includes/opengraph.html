@@ -15,6 +15,7 @@
 {% else %}
   {% assign meta_image = site.profile_image %}
 {% endif %}
+<meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="og:url" content="{{ meta_url }}" />
 <meta property="og:type" content="article" />
@@ -24,7 +25,6 @@
 <meta property="og:image:width" content="640" />
 <meta property="og:image:height" content="480" />
 <meta property="og:locale" content="{{ site.locale }}" />
-
 <meta name="twitter:site" content="@{{ site.author.twitter_username }}" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@{{ site.author.twitter_username }}" />
