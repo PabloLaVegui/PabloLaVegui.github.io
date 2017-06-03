@@ -1,7 +1,6 @@
 jekyllblog:
-  image: jekyll-uno
+  image: jekylluno
   hostname: jekyll
-  command: jekyll serve --watch --drafts
   ports:
     - "4000:4000"
   volumes:
