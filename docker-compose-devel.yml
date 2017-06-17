@@ -1,4 +1,5 @@
 jekyllblog:
+  container_name: cowsandcode-server
   image: jekylluno
   hostname: jekyll
   ports:
