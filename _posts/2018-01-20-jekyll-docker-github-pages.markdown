@@ -2,8 +2,8 @@
 layout: post
 title: Jekyll + Docker + Github Pages
 date: 2018/01/18
-image: /images/posts/jekyll-docker/jekyll-docker.jpg
-image-share: /images/posts/jekyll-docker/jekyll-docker.jpg
+image: /images/posts/2018-01-20-jekyll-docker-github-pages/jekyll-docker.jpg
+image-share: /images/posts/2018-01-20-jekyll-docker-github-pages/jekyll-docker.jpg
 categories:
 tags: [jekyll, docker, github, pages, blog]
 ---
@@ -53,7 +53,7 @@ Ahora que tenemos nuestro repo en local, el siguiente paso será crear nuestro r
 
 Debemos crear en nuestra cuenta de [GitHub][github_home], desde la propia web, dentro de nuestra cuenta, un nuevo repositorio:
 
-![boton crear repositorio en github](/images/posts/jekyll-docker/github-create-repo.jpg)
+![boton crear repositorio en github](/images/posts/2018-01-20-jekyll-docker-github-pages/github-create-repo.jpg)
 
 No vale ponerle cualquier nombre, el nombre del repositorio debe ser: `<nombre_de_usuario>.githug.io` en mi caso el nombre del repo es [PabloLaVegui.github.io](https://github.com/PabloLaVegui/PabloLaVegui.github.io).
 
