@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Entorno completo para trabajar con PHP, PHP + Xdebug + PHPUnit + PHPStorm + Docker
+description: Como montar un entorno para desarrollar en local con PHP, XDebug, testear con PHPUnit, usar Docker para desarrollar en local y PHPStorm como IDE. Configuración de PHPStorm para que funcione todo.
 date: '2018-02-10'
 image: /images/posts/php-docker-xdebug-rename/docker_php.png
 image-share: /images/posts/php-docker-xdebug-rename/docker_php.png

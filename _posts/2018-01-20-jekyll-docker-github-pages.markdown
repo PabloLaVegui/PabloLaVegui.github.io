@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Jekyll + Docker + Github Pages
+description: Como crear un blog con Jekyll usando para desarrollar en local con Docker y publicarlo en Github Pages
 date: 2018/01/18
 image: /images/posts/2018-01-20-jekyll-docker-github-pages/jekyll-docker.jpg
 image-share: /images/posts/2018-01-20-jekyll-docker-github-pages/jekyll-docker.jpg

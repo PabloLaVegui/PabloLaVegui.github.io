@@ -1,6 +1,6 @@
 # Site settings
 title: 'COWS AND CODE'
-description: 'Pablo LaVegui site'
+description: 'Pablo LaVegui Blog. Blog que trata sobre código, herramientas y todo lo relacionado con la programación'
 url: 'http://cowsandcode.com'
 baseurl: ''
 locale: 'es_ES'
